@@ -1,95 +1,112 @@
 <!DOCTYPE html>
 <html lang="en">
-<style>
-    .div-1 {
-        background-color:#C1CDCD;
-    }
-</style>
 <head>
-  <title>Keanu Bowker</title>
+  <title>Personal Website</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
-  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
-  <link href="mycss.css" rel="stylesheet" type="text/css">
-  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <style>
+    body, html {
+     height: 97%;
+     margin: 0;
+    }
+
+    /* Remove the navbar's default margin-bottom and rounded borders */ 
+    .navbar {
+      margin: 0px;
+      border-radius: 0;
+    }
+    
+    /* Add a gray background color and some padding to the footer */
+    footer {
+      margin: 0px;
+      background-color: #f2f2f2;
+      padding: 25px;
+    }
+    .jumbotron {
+    background-image: url('cEbpaj.jpg');
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: Montserrat Medium, sans-serif;
+   }
+
+   .red {
+    background-color: #880808;
+   }
+
+.button {
+  background-color: #880808;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  -webkit-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+}
+
+.button1 {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+.btn {
+  background-color: #880808;
+  border: none;
+  color: white;
+  padding: 12px 30px;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.btn:hover {
+  background-color: RoyalBlue;
+}
+  </style>
 </head>
-<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
-<nav class="navbarer navbar-inverse">
-  <div class="container-fluider">
+<body>
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
     <div class="navbar-header">
       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
       </button>
       <a class="navbar-brand" href="#">KB</a>
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
-      <ul class="nav navbar-nav" style="color:black">
-        <li class="active"><a href="#" style="color:black">Home</a></li>
-        <li><a href="NewTextDocument.html">Portfolio</a></li>
+      <ul class="nav navbar-nav navbar-right">
+        <li class="active"><a href="#">About</a></li>
+        <li><a href="skills.html" target="_blank">Skills</a></li>
+        <li><a href="portfolio.html" target="_blank">Portfolio</a></li>
+        <li class="red"><a href="contact.html" target="_blank">Contact</a></li>
+      </ul>
     </div>
   </div>
 </nav>
 
-
-<div id="mainheader" class="jumbotron text-center">
-  <h1 >Keanu Bowker</h1>
-  <h3>Junior Data Scientist</h3>
-</div>
-
-<!-- Container (About Section) -->
-<div id="about" class="container-fluid">
-  <div class="row">
-    <div class="col-sm-8">
-      <h2>PERSONAL PROFILE</h2><br>
-      <h4>Junior Data Scientist at UMUZI</h4><br>
-      <p>Junior data scientist with a creative edge. I always strive to
+<div class="jumbotron text-center">
+  <div class="container text-center">
+    <h1>Keanu Bowker</h1>  
+    <h3>Hello...</h3>    
+    <p>I'm Keanu Bowker. I'm a junior data scientist with a creative edge. I always strive to
 achieve the highest standard in any situation. I find working
 on new challenges and learning new things alluring, as I have
 a very curious mind. Experienced in executing data-driven
-solutions to increase the efficiency of business operations.
-</p>
-      <br>
-    </div>
+solutions to increase the efficiency of business operations. </p>
   </div>
+<br>
+<br>
+<a href="CV_Keanu_Bowker.pdf" target="_blank" download="CV_Keanu_Bowker"><button class="button button1">Download Resume</button></a>
 </div>
-
-
-
-<!-- Container (Portfolio Section) -->
-<div id="portfolio" class="container-fluid text-center" style="background-color:#2F4F4F	;">
-  <h2>PROFESSIONAL SKILLS</h2><br>
-      <p>Python & SQL<br> Machine Learning <br> Human Centered Design<br> Data Visualization and Analysis <br> Power BI <br> Google Data Studio <br> Data Manipulation and Modelling</p>
-<h2>PERSONAL SKILLS</h2><br>
-      <p>Critical Thinking<br> Creative Thinking<br> Problem Solving<br> Team Player<br> Communication</p>
-
-</div>
-
-
-<!-- Container (Contact Section) -->
-<div id="contact" class="container-fluid">
-  <h2 class="text-center">CONTACT DETAILS</h2>
-  <div class="row">
-    <div class="col-sm-5">
-      <p>Contact me for more.</p>
-      <p><span class="glyphicon glyphicon-map-marker"></span> Johannesburg, RSA</p>
-      <p><span class="glyphicon glyphicon-phone"></span> 0614990030</p>
-      <p><span class="glyphicon glyphicon-envelope"></span>keanubowker8@gmail.com</p>
-      <p><span class="glyphicon glyphicon-globe"></span></i> <a href="https://www.linkedin.com/in/keanu-bowker-85a98719b/" target="_blank">LinkedIn</a> </p>
-    </div>
-
-  </div>
-</div>
-
-<!-- Image of location/map -->
-
-
-<footer class="container-fluider text-center">
-  <p>Keanu Bowker</p>
-</footer>
 </body>
 </html>
