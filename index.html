@@ -17,6 +17,7 @@
     .navbar {
       margin: 0px;
       border-radius: 0;
+      padding: 10px;
     }
     
     /* Add a gray background color and some padding to the footer */
@@ -67,42 +68,71 @@
 }
 
 .btn:hover {
-  background-color: RoyalBlue;
+  background-color: grey;
 }
+
+.topnav a.active {
+  border-bottom: 3px solid #880808;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: #a8a8a8;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  border-bottom: 3px solid transparent;
+}
+
+.label {
+  float: left;
+  display: block;
+  color: #a8a8a8;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  border-bottom: 3px solid transparent;
+}
+
+.topnav a:hover {
+  border-bottom: 3px solid #880808;
+}
+
   </style>
 </head>
 <body>
 
 <nav class="navbar navbar-inverse">
-  <div class="container-fluid">
-    <div class="navbar-header">
+  <div class= "topnav">
+    <div class=" navbar-header">
       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
-        <span class="icon-bar"></span>                        
+        <span class="icon-bar"></span>                
       </button>
-      <a class="navbar-brand" href="#">KB</a>
+      <p class="label" href="#"><b>K E A N U B O W K E R</b></p>
     </div>
-    <div class="collapse navbar-collapse" id="myNavbar">
-      <ul class="nav navbar-nav navbar-right">
-        <li class="active"><a href="#">About</a></li>
-        <li><a href="skills.html" target="_blank">Skills</a></li>
-        <li><a href="portfolio.html" target="_blank">Portfolio</a></li>
-        <li class="red"><a href="contact.html" target="_blank">Contact</a></li>
-      </ul>
+    <div class=" topnav collapse navbar-collapse navbar-right nav navbar-nav" id="myNavbar">
+       <a class="active navbar-brand" href="#"><b>ABOUT</b></a>
+        <a class="navbar-brand" href="skills.html"><b>SKILLS</b></a>
+        <a class="navbar-brand" href="portfolio.html"><b>PORTFOLIO</b></a>
+        <a class="navbar-brand"  href="contact.html"><font color="#880808"><b>CONTACT</b></font></a>
     </div>
   </div>
 </nav>
 
 <div class="jumbotron text-center">
   <div class="container text-center">
-    <h1>Keanu Bowker</h1>  
-    <h3>Hello...</h3>    
-    <p>I'm Keanu Bowker. I'm a junior data scientist with a creative edge. I always strive to
+    <h1><b>Keanu Bowker</b></h1>  
+    <h3><b>Hello...</b></h3>    
+    <p><b>I'm Keanu Bowker. I'm a junior data scientist with a creative edge. I always strive to
 achieve the highest standard in any situation. I find working
 on new challenges and learning new things alluring, as I have
 a very curious mind. Experienced in executing data-driven
-solutions to increase the efficiency of business operations. </p>
+solutions to increase the efficiency of business operations.</b></p>
   </div>
 <br>
 <br>
